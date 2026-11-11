@@ -289,7 +289,7 @@ function DocumentEditor(props: Props, ref: React.ForwardedRef<SharedEditor>) {
           onDestroy={handleDestroy}
           onChange={updateDocState}
           headingPrefix={
-            "preferences" in document
+            "getPreference" in document
               ? document.getPreference(DocumentPreference.HeadingPrefix)
               : undefined
           }
